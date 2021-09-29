@@ -1,0 +1,25 @@
+.digimonContainer ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.digimonCard {
+  max-width: 300px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fabe0d;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.digimonCard h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.digimonCard img {
+  width: 100%;
+  box-sizing: border-box;
+}
