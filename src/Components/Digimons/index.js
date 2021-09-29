@@ -7,7 +7,12 @@ const Digimons = () => {
     <div>
       <ul>
         {digimons.map((digimon, index) => {
-          return <li key={index}>{digimon}</li>;
+          return (
+            <div>
+              <li key={index}>{digimon.name}</li>
+              <img src={digimon.img} />
+            </div>
+          );
         })}
       </ul>
     </div>

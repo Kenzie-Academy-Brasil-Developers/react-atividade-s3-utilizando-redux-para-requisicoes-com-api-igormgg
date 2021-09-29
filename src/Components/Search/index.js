@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import addDigimonsThunk from "../../store/modules/digimons/thunks";
 
 const Search = () => {
   const [input, setInput] = useState("");
@@ -8,7 +9,7 @@ const Search = () => {
 
   const handleSearch = () => {
     setError(false);
-    //chame o dispatch() passando o state input
+    dispatch(addDigimonsThunk(input));
     setInput("");
   };
 
