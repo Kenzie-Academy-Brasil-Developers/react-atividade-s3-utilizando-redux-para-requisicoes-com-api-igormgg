@@ -10,7 +10,7 @@ const Digimons = () => {
           return (
             <div>
               <li key={index}>{digimon.name}</li>
-              <img src={digimon.img} />
+              <img alt={digimon.name} src={digimon.img} />
             </div>
           );
         })}
